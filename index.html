@@ -10,25 +10,41 @@
 }
 h1 {
     font-size: 18vw;
+    font-family: Helvetica;
+    font-weight: 900;
     color: red;
     text-align: center;
+    /*height: 100%;*/
 } 
 p {
     font-size: 3vw;
     color: white;
     text-align: left;
+    padding: 0;
+    margin: 0;
 } 
-body {
+html, body {
   font-family: Arial;
+  height: 100%;
+  width: 100%;
   margin: 0;
 }
-
+body {
+  display: flex; /* Activate flexbox */
+  flex-direction: column; /* Stack children vertically */
+  min-height: 100vh; /* Ensure the body is at least as tall as the viewport */
+}
+main {
+  flex: 1; /* Allow main content to grow and fill remaining space */
+}
 /* Header */
 header {
   padding: 60px;
   text-align: center;
   background: #401abc;
-  color: white;
+  color: black;
+  width: 100%;
+  height: 100%;
 }
 
 /* Top navigation bar */
@@ -95,50 +111,16 @@ footer {
 </head>
 <body>
 
-<!-- Note
-<div style="background:yellow;padding:5px;text-align:center;">
-  <h4>Resize the browser window to see the responsive effect.</h4>
-</div> -->
-
 <div class="navbar">
-  <a href="#">Home</a>
-  <a href="#">Projects</a>
   <a href="privacyandpolicy.html">Privacy and Policy</a>
-  <a href="#">Contact</a>
- </div>
+  <a href="mailto:support@remigiokevin.com">Contact</a>
+</div>
+
 <!-- Header -->
 <header>
   <h1>Kevin Remigio</h1>
   <p>Software <b>Design</b> and <b>Development</b></p>  
 </header>
-
-<!-- Navigation Bar -->
-<div class="navbar">
-  <a href="#">Home</a>
-  <a href="#">Projects</a>
-  <a href="#">Link</a>
-  <a href="#">Contact</a>
-</div>
-
-<!-- Content Container -->
-<!-- <div class="container">
-  <div class="side">
-    <h2>Column</h2>
-  </div>
-  <div class="main">
-    <h2>TITLE HEADING</h2>
-    <h5>Title description, Oct 7, 2025</h5>
-    <div class="fakeimg" style="height:200px;">Image</div>
-    <p>Some text..</p>
-    <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-
-  </div>
-</div>
-
-<!-- Footer -->
-  <footer>
-  <!-- <h2>Footer</h2> -->
-</footer>
-
+     
 </body>
 </html>
