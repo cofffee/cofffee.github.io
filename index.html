@@ -1,127 +1,187 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Portfolio Website</title>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-* {
-  box-sizing: border-box;
-}
-h1 {
-    font-size: 13vw;
-    font-family: Helvetica;
-    font-weight: 900;
-    color: red;
-    text-align: center;
-    /*height: 100%;*/
-} 
-p {
-    font-size: 3vw;
-    font-family: Helvetica;
-    color: white;
-    text-align: left;
-    padding: 0;
-    margin: 0;
-} 
-html, body {
-  font-family: Arial;
-  height: 100%;
-  width: 100%;
-  margin: 0;
-}
-body {
-  display: flex; /* Activate flexbox */
-  flex-direction: column; /* Stack children vertically */
-  min-height: 100vh; /* Ensure the body is at least as tall as the viewport */
-}
-main {
-  flex: 1; /* Allow main content to grow and fill remaining space */
-}
-/* Header */
-header {
-  padding: 60px;
-  text-align: center;
-  background: #401abc;
-  color: black;
-  width: 100%;
-  height: 100%;
-}
-
-/* Top navigation bar */
-.navbar {
-  display: flex;
-  background-color: #333;
-}
-
-/* Navigation bar links */
-.navbar a {
-  color: white;
-  padding: 14px 20px;
-  text-decoration: none;
-  text-align: center;
-}
-
-/* Change color on hover */
-.navbar a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-/* Column container */
-.container {  
-  display: flex;
-  flex-wrap: wrap;
-}
-
-/* Sidebar/left column */
-.side {
-  flex: 30%;
-  background-color: #f1f1f1;
-  padding: 20px;
-}
-
-/* Main column */
-.main {
-  flex: 70%;
-  background-color: white;
-  padding: 20px;
-}
-
-/* Fake image, just for this example */
-.fakeimg {
-  background-color: #aaa;
-  width: 100%;
-  padding: 20px;
-}
-
-/* Footer */
-footer {
-  padding: 20px;
-  text-align: center;
-  background: #ddd;
-}
-
-/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 700px) {
-  .container, .navbar {   
-    flex-direction: column;
-  }
-}
-</style>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio Website</title>
+<link rel="stylesheet" href="mystyle.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Poppins" />
 </head>
 <body>
 
-<div class="navbar">
+<!-- <div class="navbar">
   <a href="privacyandpolicy.html">Privacy and Policy</a>
   <a href="mailto:support@remigiokevin.com">Contact</a>
-</div>
+</div> -->
 
 <!-- Header -->
-<header>
-  <h1>Kevin Remigio</h1>
-  <p>Software <b>Design</b> and <b>Development</b></p>  
+<header class="header">
+  <a href="#" class="logo"><span>Kevin Remigio</span></a>
+  <ul class="nav-links">
+    <li>
+      <a href="#about">About</a>
+    </li>
+  
+    <li>
+      <a href="#experience">Experience</a>
+    </li>
+
+    <li>
+      <a href="#projects">Projects</a>
+    </li>
+
+    <li>
+      <a href="#contact">Contact</a>
+    </li>
+     <!-- <li>
+      <a href="#privacyandpolicy">Privacy and Policy</a>
+    </li> -->
+  </ul>
+
+  <i class="fa-solid fa-bars" id="menu-icon"></i>
+  <button class="visit-btn">Visit Github</button>
 </header>
-     
+
+<section id="about" class="about">
+  <div class="about-container">
+    <img src="image.jpg" alt="">
+    <div class="info-box">
+      <div class="text">
+        <h3>Hi, I'm</h3>
+        <h1>Kevin Remigio</h1>
+        <span>iOS Developer</span>
+      </div>
+
+      <div class="btn-group">
+        <div class="btn">Download CV</div>
+        <div class="btn">Contact</div>
+      </div>
+
+      <div class="socials">
+        <i class="fa-brands fa-github"></i>
+        <i class="fa-brands fa-linkedin"></i>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="experience" class="experience">
+
+  <h2 class="section-title">Experience</h2>
+
+  <div class="experience-info">
+
+    <div class="grid">
+
+      <div class="grid-card">
+        <i class="fa-solid fa-code"></i>
+        <span>Senior iOS Engineer</span>
+        <h3>8 Years</h3>
+        <p>Hello</p>
+      </div>
+
+      <div class="grid-card">
+        <i class="fa-solid fa-code"></i>
+        <span>iOS Engineer</span>
+        <h3>2 Years</h3>
+        <p>Hello</p>
+      </div>
+
+      <div class="grid-card">
+        <i class="fa-solid fa-code"></i>
+        <span>Senior iOS Engineer</span>
+        <h3>8 Years</h3>
+        <p>Hello</p>
+      </div>
+
+      <div class="grid-card">
+        <i class="fa-solid fa-code"></i>
+        <span>Senior iOS Engineer</span>
+        <h3>8 Years</h3>
+        <p>Hello</p>
+      </div>
+
+    </div>
+    
+    <img src="image.jpg" alt="">
+
+  </div>
+
+</section>
+
+<section id="projects" class="projects">
+  
+  <h2 class="section-title">Recent Projects</h2>
+
+  <div class="projects-grid">
+
+    <div class="project-card">
+      <img src="image.jpg" alt="">
+      <h3>Project X</h3>
+      <p>We could have been so good together</p>
+      <div class="btn-group">
+        <div class="btn">Live Demo</div>
+        <div class="btn">Github Repo</div>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <img src="image.jpg" alt="">
+      <h3>Project X</h3>
+      <p>We could have been so good together</p>
+      <div class="btn-group">
+        <div class="btn">Live Demo</div>
+        <div class="btn">Github Repo</div>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <img src="image.jpg" alt="">
+      <h3>Project X</h3>
+      <p>We could have been so good together</p>
+      <div class="btn-group">
+        <div class="btn">Live Demo</div>
+        <div class="btn">Github Repo</div>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+<section class="contact" id="contact">
+  <div class="input-box">
+    
+    <h2 class="section-title">Contact Me</h2>
+    <div class="input">
+      <input type="text" placeholder="example@email.com">
+      <i class="fa-solid fa-envelope"></i>
+    </div>
+
+    <div class="btn">Submit</div>
+  </div>
+
+</section>
+
+<footer>
+  <ul>
+    <li>
+      <a href="#about">About</a>
+    </li>
+    <li>
+      <a href="#experience">Experience</a>
+    </li>
+    <li>
+      <a href="#projects">Projects</a>
+    </li>
+    <li>
+      <a href="#contact">Contact</a>
+    </li>
+  </ul>
+  <p class="copyright">©All Rights Reserved | Kevin Remigio</p>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
