@@ -383,11 +383,13 @@ footer ul li a{
 } 
 @media(max-width:600px){
     header{
-        padding: 1rem 5rem;
-        gap: 1rem;
+        padding: 1rem 1rem;
+        gap: 5rem;
     }
     header #menu-icon{
+        position: fixed;
         display: flex;
+        left: 84%;
     }
     .nav-links{
         position: absolute;
