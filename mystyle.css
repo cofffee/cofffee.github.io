@@ -62,7 +62,7 @@ li a::before {
     top: 25px;
     border-radius: 1 rem;
     transition: 0.3s ease-in-out;
-    background: linear-gradient(to right,rgb(0, 157, 255), rgb(255, 0, 255));
+    background: linear-gradient(to right,rgb(255, 240, 0), rgb(255, 0, 255));
 }
 li a:hover::before {
     width: 100%;
@@ -77,10 +77,10 @@ li a:hover::before {
     cursor: pointer;
     text-wrap: nowrap;
     transition: 0.3s ease-in-out;
-    background:  linear-gradient(to right,rgb(0, 157, 255), rgb(255, 0, 255));
+    background:  linear-gradient(to right,rgb(255, 240, 0), rgb(255, 0, 255));
 }
 .visit-btn:hover {
-    background:  linear-gradient(to right,rgb(255, 0, 255), rgb(0, 157, 255));
+    background:  linear-gradient(to right,rgb(255, 0, 255), rgb(255, 240, 0));
     transform:scale(1.03)
 }
 #menu-icon {
@@ -127,7 +127,7 @@ section {
     font-weight: 600;
 }
 .info-box span {
-    background: linear-gradient(to right,rgb(255, 0, 255), rgb(0, 157, 255));
+    background: linear-gradient(to right,rgb(255, 0, 255), rgb(255, 240, 0));
     background-clip: text;
     color: transparent;
     font-size: 2rem;
@@ -210,7 +210,7 @@ section {
     background: linear-gradient(
         to right,
         rgb(255, 0, 255), 
-        rgb(0, 157, 255));
+        rgb(255, 240, 0));
     background-clip: text;
     color: transparent;
 }
